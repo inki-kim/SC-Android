@@ -9,16 +9,6 @@
 * Lombok
 * Butter Knife
 
-*****
-
-## GitLab-Flow
-
-![gitlab-flow](./assets/image/environment_branches.png)
-
-* master: 개발 브랜치
-* pre-production: 테스트 브랜치 (배포 준비)
-* production: 배포 브랜치
-
 
 *****
 
