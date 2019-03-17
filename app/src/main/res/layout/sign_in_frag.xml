@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editSignInEmail"
+        android:layout_width="@dimen/signInInputWidth"
+        android:layout_height="@dimen/signInInputHeight"
+        android:layout_below="@id/imgSignInTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/signInInputMarginTop"
+        android:backgroundTint="@color/darkPurple1"
+        android:cursorVisible="false"
+        android:hint="@string/sign_in_email_hint" />
+
+    <EditText
+        android:id="@+id/editSignInPw"
+        android:layout_width="@dimen/signInInputWidth"
+        android:layout_height="@dimen/signInInputHeight"
+        android:layout_below="@id/editSignInEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/signInSpace10dp"
+        android:backgroundTint="@color/darkPurple1"
+        android:cursorVisible="false"
+        android:inputType="textPassword"
+        android:hint="@string/sign_in_pw_hint" />
+
+    <CheckBox
+        android:id="@+id/checkSignInRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editSignInPw"
+        android:layout_below="@id/editSignInPw"
+        android:layout_marginTop="@dimen/signInSpace10dp"
+        android:buttonTint="@color/darkPurple1"
+        android:checked="true"
+        android:text="@string/sign_in_remember" />
+
+    <Button
+        android:id="@+id/btnSignInForgetPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editSignInPw"
+        android:layout_below="@id/editSignInPw"
+        android:background="@color/alphaPercent0"
+        android:text="@string/sign_in_forget_pw" />
+
+    <Button
+        android:id="@+id/btnSignInNotId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editSignInPw"
+        android:layout_below="@id/btnSignInForgetPw"
+        android:background="@color/alphaPercent0"
+        android:minHeight="@dimen/signInSpace0dp"
+        android:text="@string/sign_in_not_id" />
+
+    <Button
+        android:id="@+id/btnSignInNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signInButtonHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkPurple1"
+        android:text="@string/sign_in_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/signInNextText" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSignUpTitle"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/signUpScrollPaddingBottom">
+
+            <ImageView
+                android:id="@+id/imgSignUpProfile"
+                android:src="@drawable/signup_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/editSignUpEmail"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpInputHeight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace10dp"
+                android:layout_below="@id/imgSignUpProfile"
+                android:backgroundTint="@color/darkPurple1"
+                android:cursorVisible="false"
+                android:hint="@string/sign_up_email_hint" />
+
+            <Button
+                android:id="@+id/btnSignUpAuthCodeSend"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpButtonHeight"
+                android:layout_below="@id/editSignUpEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace10dp"
+                android:background="@color/darkPurple1"
+                android:text="@string/sign_up_auth_code_send"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editSignUpPwFirst"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpInputHeight"
+                android:layout_below="@id/btnSignUpAuthCodeSend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace7dp"
+                android:backgroundTint="@color/darkPurple1"
+                android:cursorVisible="false"
+                android:inputType="textPassword"
+                android:hint="@string/sign_up_pw_hint" />
+
+            <EditText
+                android:id="@+id/editSignUpPwSecond"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpInputHeight"
+                android:layout_below="@id/editSignUpPwFirst"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace7dp"
+                android:backgroundTint="@color/darkPurple1"
+                android:cursorVisible="false"
+                android:inputType="textPassword"
+                android:hint="@string/sign_up_pw_re_hint" />
+
+            <EditText
+                android:id="@+id/editSignUpName"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpInputHeight"
+                android:layout_below="@id/editSignUpPwSecond"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace7dp"
+                android:backgroundTint="@color/darkPurple1"
+                android:cursorVisible="false"
+                android:hint="@string/sign_up_name_hint" />
+
+            <EditText
+                android:id="@+id/editSignUpBirth"
+                android:layout_width="@dimen/signUpInputWidth"
+                android:layout_height="@dimen/signUpInputHeight"
+                android:layout_below="@id/editSignUpName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/signUpSpace7dp"
+                android:backgroundTint="@color/darkPurple1"
+                android:cursorVisible="false"
+                android:inputType="date"
+                android:hint="@string/sign_up_birth_hint" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editSignUpBirth"
+                android:layout_marginTop="@dimen/signUpSpace12dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGenderMale"
+                    android:layout_width="@dimen/signUpRadioWidth"
+                    android:layout_height="@dimen/signUpRadioHeight"
+                    android:background="@drawable/radio_button_gender_male"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioGenderFemale"
+                    android:layout_width="@dimen/signUpRadioWidth"
+                    android:layout_height="@dimen/signUpRadioHeight"
+                    android:background="@drawable/radio_button_gender_female"
+                    android:button="@null" />
+
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSignUpNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signUpButtonHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkPurple1"
+        android:text="@string/sign_up_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/signUpNextText" />
+
+</RelativeLayout>

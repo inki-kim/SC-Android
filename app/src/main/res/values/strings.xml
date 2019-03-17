@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ServersCenter</string>
+
+    <!-- Sign In Activity -->
+    <string name="sign_in_title">로그인</string>
+    <string name="sign_in_email_hint">이메일 주소를 입력해 주세요.</string>
+    <string name="sign_in_pw_hint">비밀번호를 입력해 주세요.</string>
+    <string name="sign_in_remember">로그인 정보 기억</string>
+    <string name="sign_in_forget_pw"><u>비밀번호를 잊어버렸습니다.</u></string>
+    <string name="sign_in_not_id"><u>계정이 없습니다</u></string>
+    <string name="sign_in_next">Sign In</string>
+
+    <!-- Sign Up Activity -->
+    <string name="sign_up_title">회원가입</string>
+    <string name="sign_up_email_hint">이메일 주소를 입력해 주세요.</string>
+    <string name="sign_up_auth_code_send">인증 메일 전송</string>
+    <string name="sign_up_auth_code_hint">인증 번호를 입력해 주세요.</string>
+    <string name="sign_up_pw_hint">사용할 비밀번호를 입력해 주세요.</string>
+    <string name="sign_up_pw_re_hint">다시 한 번 입력해 주세요.</string>
+    <string name="sign_up_name_hint">성함을 입력해 주세요.</string>
+    <string name="sign_up_birth_hint">생년월일 입력 (1900-01-01)</string>
+    <string name="sign_up_next">Sign Up</string>
+
+    <!-- Password Reset Activity -->
+    <string name="password_reset_title">비밀번호 찾기</string>
+    <string name="password_reset_email_hint">이메일 주소를 입력해 주세요.</string>
+    <string name="password_reset_auth_code_send">인증 메일 전송</string>
+    <string name="password_reset_auth_code_hint">인증 번호를 입력해 주세요.</string>
+    <string name="password_reset_pw_hint">사용할 비밀번호를 입력해 주세요.</string>
+    <string name="password_reset_pw_re_hint">다시 한 번 입력해 주세요.</string>
+    <string name="password_reset_next">변경</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">Hello!</string>
+    <string name="main_chat">chatbot</string>
+    <string name="main_profile_name"><b>김인기 / 24 / 남</b></string>
+    <string name="main_profile_birth"><b>1995. 12. 06.</b></string>
+    <string name="main_profile_email"><b>aid93@naver.com</b></string>
+    <string name="main_notice_title"><b>공지사항 ｜ </b></string>
+    <string name="main_notice_content"><b>version release note 1.0</b></string>
+    <string name="main_notice_day"><b>어제</b></string>
+
+</resources>

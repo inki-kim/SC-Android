@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_main_background">
+
+    <RelativeLayout
+        android:id="@+id/layoutMainTool"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarMain"
+            style="@style/Toolbar.Transparent"
+            app:contentInsetStart="@dimen/toolbarInset"
+            app:contentInsetEnd="@dimen/toolbarInset">
+
+            <ImageView
+                android:id="@+id/imgToolbarLeftMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_people"/>
+
+            <TextView
+                android:id="@+id/txtToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/imgToolbarRightMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_menu"/>
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/main_title"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutMainNotice"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imgMainProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgMainProfile"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/imgMainProfile"
+            android:text="@string/main_profile_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgMainProfile"
+            android:text="@string/main_profile_birth"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imgMainProfile"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/imgMainProfile"
+            android:text="@string/main_profile_email"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutMainNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/txtMainNoticeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_notice_title"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/txtMainNoticeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/txtMainNoticeTitle"
+            android:text="@string/main_notice_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/txtMainNoticeDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtMainNoticeContent"
+            android:text="@string/main_notice_day"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

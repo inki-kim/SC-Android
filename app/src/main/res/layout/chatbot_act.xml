@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarChat"
+            style="@style/Toolbar.Grey"
+            app:contentInsetStart="@dimen/toolbarInset"
+            app:contentInsetEnd="@dimen/toolbarInset">
+
+            <ImageView
+                android:id="@+id/imgToolbarLeftMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_people"/>
+
+            <TextView
+                android:id="@+id/txtToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/imgToolbarRightMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_menu"/>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarChat"
+            android:background="@color/grey1"
+            android:padding="10dp">
+
+            <ListView
+                android:id="@+id/messagesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:divider="@null"
+                android:listSelector="@color/alphaPercent0"
+                android:transcriptMode="alwaysScroll" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey3">
+
+            <EditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btnChatSend"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:padding="2dp"
+                android:textSize="20dp"
+                android:hint="Write a message" />
+
+            <ImageView
+                android:id="@+id/btnChatSend"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fab_bg_normal"
+                android:src="@drawable/ic_send_white_24dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:id="@+id/coordinatorLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/contentFrame"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+</LinearLayout>

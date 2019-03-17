@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--========== Toolbar ==========-->
+    <dimen name="toolbarInset">10dp</dimen>
+
+    <!--========== Sign In ==========-->
+    <dimen name="signInTitleImageHeight">140dp</dimen>
+    <dimen name="signInTitleTextMarginTop">20dp</dimen>
+    <dimen name="signInInputWidth">340dp</dimen>
+    <dimen name="signInInputHeight">45dp</dimen>
+    <dimen name="signInInputMarginTop">30dp</dimen>
+    <dimen name="signInButtonHeight">50dp</dimen>
+
+    <dimen name="signInSpace0dp">0dp</dimen>
+    <dimen name="signInSpace10dp">10dp</dimen>
+    <dimen name="signInSpace32dp">32dp</dimen>
+    <dimen name="signInSpace48dp">48dp</dimen>
+
+    <dimen name="signInTitleText">22sp</dimen>
+    <dimen name="signInNextText">17sp</dimen>
+
+    <!--========== Sign Up ==========-->
+    <dimen name="signUpTitleImageHeight">140dp</dimen>
+    <dimen name="signUpTitleTextMarginTop">20dp</dimen>
+    <dimen name="signUpScrollPaddingBottom">70dp</dimen>
+    <dimen name="signUpInputWidth">340dp</dimen>
+    <dimen name="signUpInputHeight">45dp</dimen>
+    <dimen name="signUpButtonHeight">50dp</dimen>
+    <dimen name="signUpRadioWidth">170dp</dimen>
+    <dimen name="signUpRadioHeight">40dp</dimen>
+
+    <dimen name="signUpSpace5dp">5dp</dimen>
+    <dimen name="signUpSpace7dp">7dp</dimen>
+    <dimen name="signUpSpace10dp">10dp</dimen>
+    <dimen name="signUpSpace12dp">12dp</dimen>
+
+    <dimen name="signUpTitleText">22sp</dimen>
+    <dimen name="signUpNextText">17sp</dimen>
+    
+    <!--========== Password Reset ==========-->
+    <dimen name="pwResetTitleImageHeight">140dp</dimen>
+    <dimen name="pwResetTitleTextMarginTop">20dp</dimen>
+    <dimen name="pwResetScrollPaddingBottom">70dp</dimen>
+    <dimen name="pwResetInputWidth">340dp</dimen>
+    <dimen name="pwResetInputHeight">45dp</dimen>
+    <dimen name="pwResetButtonWidth">340dp</dimen>
+    <dimen name="pwResetButtonHeight">50dp</dimen>
+
+    <dimen name="pwResetSpace5dp">5dp</dimen>
+    <dimen name="pwResetSpace7dp">7dp</dimen>
+    <dimen name="pwResetSpace10dp">10dp</dimen>
+
+    <dimen name="pwResetTitleText">22sp</dimen>
+    <dimen name="pwResetNextText">17sp</dimen>
+</resources>

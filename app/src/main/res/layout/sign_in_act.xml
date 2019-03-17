@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgSignInTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signInTitleImageHeight"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_sign_in_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imgSignInTitle"
+            android:layout_alignLeft="@id/imgSignInTitle"
+            android:layout_alignRight="@id/imgSignInTitle"
+            android:layout_alignTop="@id/imgSignInTitle"
+            android:layout_marginTop="@dimen/signInTitleTextMarginTop"
+            android:gravity="center"
+            android:text="@string/sign_in_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/signInTitleText" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/contentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
