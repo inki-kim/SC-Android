@@ -97,8 +97,8 @@ public class PasswordResetFragment extends Fragment implements PasswordResetCont
         try {
             GMailSender gMailSender = new GMailSender("shady952012@gmail.com", "Vpxhf9483!");
             //GMailSender.sendMail(제목, 본문내용, 받는사람);
-            emailCode=gMailSender.getEmailCode();
-            gMailSender.sendMail("ServersCenter 이메일 인증입니다.","인증코드 : "+emailCode,editPasswordResetEmail.getText().toString());
+            emailCode = gMailSender.getEmailCode();
+            gMailSender.sendMail("ServersCenter 이메일 인증입니다.", "인증코드 : " + emailCode, editPasswordResetEmail.getText().toString());
             Toast.makeText(getContext(), "이메일을 성공적으로 보냈습니다.", Toast.LENGTH_SHORT).show();
         } catch (SendFailedException e) {
             Toast.makeText(getContext(), "이메일 형식이 잘못되었습니다.", Toast.LENGTH_SHORT).show();
